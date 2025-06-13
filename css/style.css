@@ -1,0 +1,154 @@
+/* Reset básico */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f4f9;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+header.hero {
+    background: #4a90e2;
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #ffd700;
+}
+
+section {
+    background: #fff;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+img {
+    display: block;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.fechas-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1100px;
+    display: block;
+}
+
+.fechas-container h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.fechas-container p {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.fechas-container table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.fechas-container th, 
+.fechas-container td {
+    padding: 0.75rem 1rem;
+    text-align: center;
+}
+
+.fechas-container th {
+    background: #4a90e2;
+    color: #fff;
+}
+
+.fechas-container tr:nth-child(even) {
+    background: #f0f8ff;
+}
+
+@media (max-width: 900px) {
+    .fechas-container {
+        max-width: 100%;
+        padding: 1rem;
+    }
+    section {
+        padding: 1rem;
+    }
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    appearance: button;
+    -webkit-appearance: button;
+}
+
+button[type="submit"]:hover {
+    background: #357abd;
+}
+
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #222;
+    color: #fff;
+    margin-top: 2rem;
+}
