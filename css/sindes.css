@@ -1,0 +1,127 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f4f9;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4a90e2;
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.nav {
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #ffd700;
+}
+
+.producto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background: #fff;
+    max-width: 700px;
+    margin: 3rem auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.producto-img img {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.producto-info {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.producto-info h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.producto-info p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+.precio {
+    font-size: 1.5rem;
+    color: #4a90e2;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.comprar-btn {
+    background: #ffd700;
+    color: #222;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    appearance: button;
+    -webkit-appearance: button;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
+
+.comprar-btn:hover {
+    background: #ffb700;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #222;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+@media (max-width: 700px) {
+    .producto-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    .producto-info {
+        align-items: center;
+        text-align: center;
+    }
+}
